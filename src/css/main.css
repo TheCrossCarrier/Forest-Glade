@@ -171,18 +171,14 @@ body {
   --color: var(--white);
 }
 
-.contacts {
-}
-
 .footer__contacts {
   margin-top: 40px;
 }
 
-address { font-style: normal }
+.contacts {}
 
 .contacts__item {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -201,6 +197,8 @@ address { font-style: normal }
   font-size: 18px;
   line-height: 1.39;
 }
+
+address { font-style: normal }
 
 .contacts__phone {
 }
