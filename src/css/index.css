@@ -1,3 +1,31 @@
+/* Header modified */
+
+.header.header_main-page {
+  margin-top: 24px;
+  background-color: transparent;
+}
+
+.header.header_main-page .logo-w-text.header__logo-w-text {
+  color: var(--green);
+}
+
+.header.header_main-page .logo.header__logo {
+  --color: var(--green);
+}
+
+.header.header_main-page .nav__link {
+  color: var(--black);
+  transition: .5s;
+}
+
+.header.header_main-page .nav__link:hover {
+  color: var(--green);
+}
+
+.header.header_main-page .nav::after {
+  background-color: transparent;
+}
+
 /* Special offer */
 
 .spec-offer {

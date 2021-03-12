@@ -64,9 +64,10 @@ body {
 
 .header {
   position: fixed;
+  z-index: 200;
   width: 100%;
   background-color: var(--green);
-  transition: background-color .4s;
+  transition: .4s;
 }
 
 .container.header__container {
