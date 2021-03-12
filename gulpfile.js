@@ -11,7 +11,7 @@ import babel from 'gulp-babel'
 import uglify from 'gulp-uglify'
 import { stream, init, reload, create } from 'browser-sync'
 
-const html = () => src('src/**/*.html')
+const html = () => src(['src/**/*.html', '!src/**/_*.html'])
   .pipe(include())
   .pipe(htmlmin({
     collapseWhitespace: true
@@ -19,15 +19,17 @@ const html = () => src('src/**/*.html')
   .pipe(dest('dist'))
   .pipe(stream())
 
-const css = () => src([
-  'src/css/preset.css',
-  // 'src/css/variables.css',
-  'src/css/fonts.css',
-  'src/css/style.css',
-  // 'src/css/media.css',
-  'src/css/**/*.css'
-])
-  .pipe(concat('style.css'))
+const css = async () => {
+  const concatinate = [
+    'src/css/preset.css',
+    // 'src/css/variables.css',
+    'src/css/fonts.css',
+    'src/css/main.css',
+    'src/css/media.css'
+  ]
+  
+  src(concatinate)
+  .pipe(concat('main.css'))
   .pipe(autoPrefixer())
   .pipe(pxtorem({
     rootValue: 12,
@@ -38,6 +40,25 @@ const css = () => src([
   .pipe(csso())
   .pipe(dest('dist/css'))
   .pipe(stream())
+
+  const other = concatinate.map(el => '!' + el)
+
+  src([
+    'src/css/**/*.css',
+    ...other
+  ])
+    // .pipe(concat('style.css'))
+    .pipe(autoPrefixer())
+    .pipe(pxtorem({
+      rootValue: 12,
+      unitPrecision: 4,
+      propList: ['*']
+    }))
+    .pipe(replace(/Px|PX|pX/g, 'px'))
+    .pipe(csso())
+    .pipe(dest('dist/css'))
+    .pipe(stream())
+}
 
 const js = () => src('src/js/**/*.js')
   .pipe(babel({

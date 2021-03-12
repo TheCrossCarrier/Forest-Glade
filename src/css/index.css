@@ -1,0 +1,111 @@
+/* Special offer */
+
+.spec-offer {
+  margin-top: 54px;
+}
+
+.spec-offer__block {
+  position: relative;
+  width: 325px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-offer__title {
+  font-size: 36px;
+  color: var(--green);
+}
+
+.spec-offer__name {
+  margin-top: 14px;
+  font-size: 30px;
+  line-height: 1.33;
+}
+
+.spec-offer__more-btn {
+  margin-top: 25px;
+  padding: 7px 40px;
+  width: fit-content;
+  display: block;
+  background-color: var(--green);
+  border-radius: 25px;
+  font-size: 18px;
+  color: var(--white-almost);
+}
+
+.spec-offer__more-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 1.5px var(--black);
+}
+
+/* House-background */
+
+.house-bg {
+  position: absolute;
+  z-index: -100;
+  left: calc(50% - 41px);
+  top: -350px;
+  height: 1347.45px;
+  width: 1859px;
+  transform: translateX(-50%);
+  background: url(../img/house.svg) center/contain no-repeat;
+}
+
+/* Introduction */
+
+.introduction {
+  padding-top: 750px;
+  height: 1186px;
+  font-size: 24px;
+  line-height: 1.67;
+  background: url(../img/glade.svg) bottom no-repeat;
+  text-align: justify;
+}
+
+.introduction__container.container {
+
+}
+
+.introduction__greeting {
+}
+
+.introduction__text {
+}
+
+/*  */
+
+/* Footer */
+
+.footer {
+  /*  */
+  margin-top: 173px;
+  /*  */
+  padding: 52px 0 41px;
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.footer__container.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__logo-w-text .logo-w-text__text {
+  font-size: 72px;
+  color: var(--white);
+}
+
+.footer__logo.logo {
+  height: 143px;
+  --color: var(--white);
+}
+.contacts {
+}
+.footer__nav.nav__list {
+  margin-top: 132px;
+}
+
+.footer__nav .nav__link:hover {
+  color: var(--black);
+}
