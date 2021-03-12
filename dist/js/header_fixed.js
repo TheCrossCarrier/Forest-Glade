@@ -1,0 +1,1 @@
+"use strict";var header=document.querySelector(".header");window.onscroll=function(){24<=window.pageYOffset?header.classList.remove("header_main-page"):header.classList.add("header_main-page")};

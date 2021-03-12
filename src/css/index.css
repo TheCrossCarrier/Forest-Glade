@@ -83,22 +83,29 @@
 /* Introduction */
 
 .introduction {
-  padding-top: 750px;
-  height: 1186px;
+  /* padding-top: 750px; */
+  margin-top: 750px;
+  /* padding-bottom: 853px; */
+  height: 1094px;
   font-size: 24px;
   line-height: 1.67;
-  background: url(../img/glade.svg) bottom no-repeat;
   text-align: justify;
-}
-
-.introduction__container.container {
-
 }
 
 .introduction__greeting {
 }
 
 .introduction__text {
+}
+
+.introduction__img {
+  position: relative;
+  z-index: -100;
+  left: 50%;
+  width: 1745px;
+  height: 1274px;
+  transform: translate(-50%, -420px);
+  background: url(../img/glade.svg) center/contain no-repeat;
 }
 
 /*  */

@@ -64,7 +64,7 @@ const js = () => src('src/js/**/*.js')
   .pipe(babel({
     presets: ['@babel/env']
   }))
-  .pipe(concat('script.js'))
+  // .pipe(concat('script.js'))
   .pipe(uglify())
   .pipe(dest('dist/js'))
   .pipe(stream())
