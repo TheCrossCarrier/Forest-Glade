@@ -9,4 +9,3 @@ window.onscroll = () => {
     header.classList.add('header_main-page')
   }
 }
-
