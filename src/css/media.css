@@ -1,4 +1,14 @@
-@media screen and (max-width: 1180px) {
+/* <= 1220px */
+
+@media screen and (max-width: 1220px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .nav.header__nav {
+    display: none;
+  }
+
   .spec-offer__block::before {
     --padding-top: 11px;
     --padding-bottom: 17px;
@@ -10,7 +20,9 @@
     top: calc(var(--padding-top) * -1);
     width: calc(100% + var(--padding-horizontal) * 2);
     height: calc(100% + var(--padding-top) + var(--padding-bottom));
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, 0.7);
     border-radius: 15px;
   }
+
+  /*  */
 }
