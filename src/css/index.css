@@ -15,7 +15,7 @@
 
 .header.header_main-page .nav__link {
   color: var(--black);
-  transition: 0.5s;
+  transition: .5s;
 }
 
 .header.header_main-page .nav__link:hover {
@@ -32,7 +32,7 @@
 }
 
 .spec-offer__block {
-  margin-top: 54px;
+  margin-top: 56.3px;
   margin-left: 76px;
   position: relative;
   width: 163px;
@@ -53,7 +53,7 @@
 }
 
 .spec-offer__more-btn {
-  margin-top: 17px;
+  margin-top: 16px;
   padding: 5px 22px;
   width: fit-content;
   display: block;
@@ -73,7 +73,7 @@
 .house-bg {
   position: absolute;
   z-index: -100;
-  left: calc(50% - 37px);
+  left: calc(50% - 27px);
   top: -250px;
   width: 1105px;
   height: 801px;
